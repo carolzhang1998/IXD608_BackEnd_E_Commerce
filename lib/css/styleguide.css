@@ -1,0 +1,401 @@
+/* css reset */
+
+*,*::after, *::before {
+	box-sizing: border-box;
+}
+:root {
+	--color-neutral-light: #eee;
+	--color-neutral-medium: #999;
+	--color-neutral-dark: #555;
+
+	--color-main-light: rgba(156, 92, 36, 0.6);
+	--color-main-medium: rgba(156, 92, 36, 1);
+	--color-main-dark: rgba(128, 62, 0, 1);
+
+	--color-black: #000;
+	--color-white: #fff;
+
+	--header-height: 3rem;
+	--spacing: 1rem;
+
+	--font-serif: PT Serif, 'PT Serif', serif;;
+	--font-sans: Josefin Sans, 'Josefin Sans', sans-serif;;
+}
+
+body {
+	margin: 0;
+/*	font-size: 100%;*/
+	font-family: var(--font-sans);
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: var(--font-serif);
+}
+h1,h2,h3,h4,h5,h6 {
+	color: var(--color-main-dark);
+}
+/*h2 {
+	margin-left: 40%;
+	margin-top: 50px;
+}*/
+a {
+	color: inherit;
+	font-weight: 700;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+/* layout classes */
+
+.container {
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.display-flex {
+	display: flex;
+}
+.display-inline-flex {
+	display: inline-flex;
+}
+.display-block {
+	display: block;
+}
+.display-inline-block {
+	display: inline-block;
+}
+
+.flex-stretch {
+	flex: 1 1 auto;
+}
+.flex-none {
+	flex: none;
+}
+.flex-align-center {
+	align-items: center;
+}
+.flex-justify-center {
+	justify-content: center;
+}
+
+
+ /* small classes */
+ .media-image {
+ 	max-width: 100%;
+ 	vertical-align: text-bottom;
+ }
+
+
+ /* components */
+
+.nav ul {
+	list-style: none;
+	margin-top: 0;
+	padding-left: 0;
+}
+
+	.nav a {
+		display: block;
+		padding: 0.2em 0.5em;
+	}
+	nav a:hover {
+		background-color: var(--color-main-medium);
+		color: var(--color-white);
+		text-decoration: none;
+	}
+	.nav .active a {
+		background-color: var(--color-main-light);
+		color: inherit;
+	}
+.nav-material ul,
+.nav-crumbs ul,
+.nav-stretch ul,
+.nav-pills ul,
+.nav-flex ul {
+	display: flex;
+}
+.nav-material li,
+.nav-stretch li {
+	flex: 1 1 auto;
+	text-align: center;
+}
+.nav-pills a {
+	border-radius: 2em;
+	padding: 0.5em 1em;
+}
+.nav-crumbs a {
+	display: inline-block;
+}
+.nav-crumbs .active a,
+.nav-crumbs a:hover {
+	background-color: transparent;
+	color: inherit;
+	text-decoration: underline;
+}
+.nav-crumbs li:not(:first-child)::before {
+	content: '/';
+}
+.nav-material a {
+	padding: 0.5em 1em;
+	position: relative;
+}
+.nav-material .active a {
+	background-color: transparent;
+	color: inherit;
+}
+.nav-material a:hover {
+	background-color: var(--color-main-light);
+	color: inherit;
+}
+.nav-material a::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0;
+	background-color: var(--color-main-medium);
+	transition: all 0.3s;
+}
+.nav-material .active a::after {
+	height: 4px;
+}
+
+.navbar {
+	background-color: var(--color-neutral-dark);
+	color: var(--color-white);
+	line-height: var(--header-height);
+}
+	.navbar h1 {
+		font-size: 1em;
+		margin: 0;
+		font-family: var(--font-sans);
+	}
+	.navbar a {
+		padding: 0 0.5em;
+	}
+
+
+/* card */
+
+.card {
+	background-color: var(--color-white);
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding: 1em;
+
+	overflow: hidden;
+	position: relative;
+}
+	.card.soft {
+		box-shadow: 0 0 10px rgba(255, 214, 0, 1);
+		border-radius: 0.5em;
+	}
+	.card.hard {
+		border: 2px solid rgba(255, 214, 0, 1);
+		border-radius: 0.2em;
+	}
+	.card.medium {
+		background-color: rgba(255, 236, 0, 0.6);
+	}
+	.card.dark {
+		background-color: rgba(255, 214, 0, 1);
+	}
+	.card.flat {
+		padding: 0;
+	}
+
+.view-window {
+	height: 60vh;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.carousel-slide:nth-of-type(1) {
+	background-image: url(2.jpeg);
+}
+.carousel-slide:nth-of-type(2) {
+	background-image: url(4.jpeg);
+}
+.carousel-slide:nth-of-type(3) {
+	background-image: url(5.jpeg);
+}
+.carousel-slide:nth-of-type(4) {
+	background-image: url(6.jpeg);
+}
+.carousel-slide:nth-of-type(5) {
+	background-image: url(7.jpeg);
+}
+.carousel-slide {
+	background-size: cover;
+	background-position: center;
+}
+.carousel {
+	width: 1200px;
+	height: auto;
+	position: relative;
+	overflow: hidden;
+	top: 0;
+	margin-right: auto;
+	margin-left: auto;
+}
+.carousel-deck {
+	width: 100%;
+	height: 45vw;
+	position: relative;
+	overflow: hidden;
+	top: 0;
+}
+.carousel-slide {
+	position: absolute;
+	left: 100%;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.carousel-slide.atLeft {
+	left: -100%;
+}
+.carousel-slide.atRight {
+	left: 100%;
+}
+.carousel-slide.atCenter {
+	left: 0;
+}
+.moving {
+	transition: left .9s;
+}
+.carousel-controls {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	user-select: none;
+}
+.carousel-control,
+.carousel-paginate {
+	width: 2em;
+	height: 2em;
+	text-align: center;
+	line-height: 2em;
+	font-family: monospace;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 50%;
+	position: absolute;
+	bottom: 199px;
+	transition: all .5s;
+}
+.carousel-control {
+	width: 3em;
+	height: 3em;
+	line-height: 3em;
+	font-size: 2em;
+}
+.carousel-control-left {
+	left: -3em;
+}
+.carousel:hover .carousel-control-left {
+	left: 15px;
+}
+.carousel-control-right{
+	right: -3em;
+}
+.carousel:hover .carousel-control-right {
+	right: 15px;
+}
+.carousel-pagination {
+	display: inline-block;
+	position: relative;
+	bottom: -2.25em;
+	transition: all .5s;
+}
+.carousel:hover .carousel-pagination {
+	bottom: 10px;
+}
+.carousel-paginate {
+	position: static;
+	font-size: 1em;
+	border-width: 0;
+	cursor: pointer;
+	outline: 0;
+	display: inline-block;
+	color: rgba(0, 0, 0, 0.2);
+}
+.carousel-paginate.active {
+	background-color: rgba(255, 255, 255, 0.7);
+	color: rgba(0, 0, 0, 1);
+	cursor: pointer;
+}
+.carousel-control:hover,
+.carousel-paginate:hover {
+	background-color: rgba(255, 255, 255, 1);
+	color: rgba(0, 0, 0, 1);
+	cursor: pointer;
+}
+.carousel[data-controls=pagination] .carousel-move-right,
+.carousel[data-controls=pagination] .carousel-move-left {
+	display: none;
+}
+.carousel[data-controls=directional] .carousel-pagination {
+	display: none;
+}
+.carousel[data-controls=none] .carousel-controls {
+	display: none;
+}
+
+.photo{
+	text-align: center;
+	display: flex;
+	padding: 20px 60px;
+	font-size: 20px;
+	justify-content: center;
+}
+
+.article-body {
+	text-align: center;
+	font-size: 20px;
+	margin-top: 30px;
+}
+.table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.table th,
+.table td {
+	text-align: left;
+	padding: 0.2em 0.5em;
+}
+.table.striped tbody tr:nth-child(odd) {
+	background-color: rgba(255, 236, 0, 0.6);
+}
+.table.lined.all th:not(:first-child),
+.table.lined.all td:not(:first-child),
+.table.lined.vertical th:not(:first-child),
+.table.lined.vertical td:not(:first-child) {
+	border-left: 1px solid rgba(107, 49, 0, 1);
+}
+.table.lined.all tbody tr,
+.table.lined.horizontal tbody tr {
+	border-top: 1px solid rgba(107, 49, 0, 1);
+}
+.table.lined.all,
+.table.lined.border {
+	border: 1px solid rgba(107, 49, 0, 1);
+}
+
+.figure {
+	margin: 0;
+	background-color: rgba(255, 214, 0, 1);
+}
+.figure img {
+	width: 100%;
+	vertical-align: text-bottom;
+}
+.figure figcaption {
+	padding: 1em;
+}
