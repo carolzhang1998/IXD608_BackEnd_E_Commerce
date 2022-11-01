@@ -1,0 +1,32 @@
+[
+	{
+		"name":"Carol Zhang",
+		"type":"Student",
+		"email":"zyqiu2022@gmail.com",
+		"classes":[601,608,618]
+	},
+	{
+		"name":"Jeremy Shi",
+		"type":"Engineer",
+		"email":"jeremy2022@gmail.com",
+		"classes":[601,608,617,618]
+	},
+	{
+		"name":"Monica Geller",
+		"type":"Chef",
+		"email":"mg2022@gmail.com",
+		"classes":[249,250,369]
+	},
+	{
+		"name":"Joey Tribbiani",
+		"type":"Actor",
+		"email":"jt2022@gmail.com",
+		"classes":[250,601,608,618]
+	},
+	{
+		"name":"Chandler Bing",
+		"type":"Who Knows",
+		"email":"cb2022@gmail.com",
+		"classes":[249,608,617]
+	}
+]
