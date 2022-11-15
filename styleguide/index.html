@@ -18,13 +18,13 @@
 			<nav class="nav flex-none">
 				<ul class="container display-flex">
 					<li><a href="#tableofcontents">Table of Contents</a></li>
-				</ul>	
+				</ul>
 			</nav>
 		</div>
 	</header>
 	<div class="container" id="tableofcontents">
 		<h2>Table of Contents</h2>
-		<div class="card">
+		<div class="card soft">
 			<nav class="nav">
 				<ul>
 					<li><a href="#typography">Typography</a>
@@ -40,6 +40,17 @@
 					<li><a href="#flexsystem">Flex System</a></li>
 					<li><a href="#tables">Tables</a></li>
 					<li><a href="#figures">Figures</a></li>
+					<li><a href="#forms">Forms</a>
+						<ul>
+							<li><a href="#inputs">Inputs</a></li>
+							<li><a href="#labels">Labels</a></li>
+							<li><a href="#controls">Controls</a></li>
+							<li><a href="#buttons">Buttons</a></li>
+							<li><a href="#hotdog">Hotdog</a></li>
+							<li><a href="#select">Select</a></li>
+							<li><a href="#checkboxes">Checkboxes</a></li>
+						</ul>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -87,7 +98,7 @@
 	</div>
 	<div class="container" id="viewwindow">
 		<h2>View Window</h2>
-		<div class="view-window" style="background-image:url(../img/16.jpeg);"></div>
+		<div class="view-window" style="background-image:url(../img/4.jpeg);"></div>
 		</div>	
 	</div>
 	<div class="container" id="navigations">
@@ -143,9 +154,94 @@
 			})
 		</script>
 	</div>
-	<div class="container" idx="gridsystem">
+	<div class="container" id="gridsystem">
 		<h2>Grid System</h2>
+
+		<h3>Basic Structure</h3>
+		<h4>Single Column Non Responsive</h4>
+		<div class="grid">
+			<div class="col-xs-12">
+				<div class="well">Column 12</div>
+			</div>
+		</div>
+
+		<h4>3 Column Responsive</h4>
+		<div class="grid">
+			<div class="col-xs-12 col-md-4">
+				<div class="well">col-xs-12 col-md-4</div>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<div class="well">col-xs-12 col-md-4</div>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<div class="well">col-xs-12 col-md-4</div>
+			</div>
+		</div>
+
+		<h4>4 Column Responsive</h4>
+		<div class="grid">
+			<div class="col xs-12 col-md-3">
+				<div class="well">col-xs-12 col-md-3</div>
+			</div>
+			<div class="col xs-12 col-md-3">
+				<div class="well">col-xs-12 col-md-3</div>
+			</div>
+			<div class="col xs-12 col-md-3">
+				<div class="well">col-xs-12 col-md-3</div>
+			</div>
+			<div class="col xs-12 col-md-3">
+				<div class="well">col-xs-12 col-md-3</div>
+			</div>
+		</div>
+		<h3>Gap</h3>
+
+		<h4>4 Column Responsive with Gap</h4>
+		<div class="grid gap">
+			<div class="col-xs-12 col-md-3">
+				<div class="well">col-xs-12 col-md-3</div>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				<div class="well">col-xs-12 col-md-3</div>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				<div class="well">col-xs-12 col-md-3</div>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				<div class="well">col-xs-12 col-md-3</div>
+			</div>
+		</div>
+
+		<h3>Other Examples</h3>
+
+		<h4>Images</h4>
+		<div class="grid gap">
+			<div class="col-xs-12 col-md-6">
+				<img src="https://via.placeholder.com/600" alt="" class="media-image">
+			</div>
+			<div class="col-xs-12 col-md-6">
+				<div class="grid gap">
+					<div class="col-xs-12 col-md-6">
+						<img src="https://via.placeholder.com/600" alt="" class="media-image">
+						<div>Text</div>
+					</div>
+					<div class="col-xs-12 col-md-6">
+						<img src="https://via.placeholder.com/600" alt="" class="media-image">
+						<div>Text</div>
+					</div>
+					<div class="col-xs-12 col-md-6">
+						<img src="https://via.placeholder.com/600" alt="" class="media-image">
+						<div>Text</div>
+					</div>
+					<div class="col-xs-12 col-md-6">
+						<img src="https://via.placeholder.com/600" alt="" class="media-image">
+						<div>Text</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
+
+
 	<div class="container" id="flexsystem">
 		<h2>Flex System</h2>
 	</div>
@@ -244,7 +340,7 @@
 				    <img src="https://via.placeholder.com/400x400?text=product" alt="">
 				    <figcaption>
 				    	<div>Product Name</div>
-				    	<div>3.99</div>
+				    	<div>$3.99</div>
 				    </figcaption>
 			    </figure>
 			</div>
@@ -253,7 +349,7 @@
 				    <img src="https://via.placeholder.com/400x400?text=product" alt="">
 				    <figcaption>
 				    	<div>Product Name</div>
-				    	<div>3.99</div>
+				    	<div>$3.99</div>
 				    </figcaption>
 			    </figure>
 			</div>
@@ -262,7 +358,7 @@
 				    <img src="https://via.placeholder.com/400x400?text=product" alt="">
 				    <figcaption>
 				    	<div>Product Name</div>
-				    	<div>3.99</div>
+				    	<div>$3.99</div>
 				    </figcaption>
 			    </figure>
 			</div>
@@ -275,7 +371,7 @@
 					<figcaption>
 						<div class="caption-body">
 							<div>Product Name</div>
-							<div>3.99</div>
+							<div>$3.99</div>
 						</div>
 					</figcaption>
 				</figure>
@@ -286,7 +382,7 @@
 					<figcaption>
 						<div class="caption-body">
 							<div>Product Name</div>
-							<div>3.99</div>
+							<div>$3.99</div>
 						</div>
 					</figcaption>
 				</figure>
@@ -297,13 +393,246 @@
 					<figcaption>
 						<div class="caption-body">
 							<div>Product Name</div>
-							<div>3.99</div>
+							<div>$3.99</div>
 						</div>
 					</figcaption>
 				</figure>
 			</div>
 		</div>
 	</div>
+	<div class="container" id="forms">
+		<h2>Forms</h2>
+		<h3>Inputs</h3>
+		<div class="card soft">
+			<form>
+				<label class="form-label-basic">Text</label><br>
+				<input type="text" class="form-basic"><br>
+				<label>Password</label><br>
+				<input type="password" class="form-basic"><br>
+				<label>Number</label><br>
+				<input type="number" class="form-basic"><br>
+				<label>URL</label><br>
+				<input type="url" class="form-basic"><br>
+				<label>Email</label><br>
+				<input type="email" class="form-basic"><br>
+				<label>Date Time</label><br>
+				<input type="datetime-local" class="form-basic"><br>
+				<label>Date</label><br>
+				<input type="date" class="form-basic"><br>
+				<label>Search</label><br>
+				<input type="search" class="form-basic"><br>
+				<label>Submit</label><br>
+				<input type="submit" value="Submit">
+			</form>
+			<h3 id="inputs">Form Input</h3>
+			<form>
+				<input type="text" class="form-input" placeholder="Text">
+				<input type="password" class="form-input" placeholder="Password">
+				<input type="number" class="form-input" placeholder="Number">
+				<input type="search" class="form-input" placeholder="Search">
+			</form>
+			<h3 id="labels">Form Label</h3>
+			<form>
+				<label class="form-label">Example</label>
+				<input type="text" class="form-input" placeholder="Text">
+				<label class="form-label">Example</label>
+				<input type="password" class="form-input" placeholder="Password">
+				<label class="form-label">Example</label>
+				<input type="number" class="form-input" placeholder="Number">
+				<label class="form-label">Example</label>
+				<input type="search" class="form-input" placeholder="Search">
+			</form>
+			<h3 id="controls">Form Control</h3>
+			<form>
+				<div class="form-control">
+					<label class="form-label">Example</label>
+					<input type="text" class="form-input" placeholder="Text">		
+				</div>
+				<div class="form-control">
+					<label class="form-label">Example</label>
+					<input type="password" class="form-input" placeholder="Password">		
+				</div>
+				<div class="form-control">
+					<label class="form-label">Example</label>
+					<input type="number" class="form-input" placeholder="Number">
+				</div>
+				<div class="form-control">
+					<label class="form-label">Example</label>
+					<input type="search" class="form-input" placeholder="Search">	
+				</div>
+			</form>
+			<h3>Address</h3>
+			<form class="form">			
+				<div class="form-control">
+					<label for="address-street" class="form-label">Street</label>
+					<input type="text" class="form-input" id="address-street" placeholder="Street Name">
+				</div>
+				<div class="form-control">
+					<div class="grid gap">
+						<div class="col-xs-12 col-md-6">
+							<label for="address-city" class="form-label">City</label>
+							<input type="text" class="form-input" id="address-city" placeholder="City">
+						</div>
+						<div class="col-xs-12 col-md-6">
+							<label for="address-state" class="form-label">State</label>
+							<input type="text" class="form-input" id="address-state" placeholder="State">
+						</div>
+					</div>
+				</div>
+				<div class="form-control">
+					<div class="grid gap">
+						<div class="col-xs-12 col-md-6">
+							<label for="address-zip" class="form-label">Zip Code</label>
+							<input type="text" class="form-input" id="address-zip" placeholder="Zip Code">
+						</div>
+						<div class="col-xs-12 col-md-6">
+							<label for="address-country" class="form-label">Country</label>
+							<input type="text" class="form-input" id="address-country" placeholder="Country">
+						</div>
+					</div>
+				</div>
+				<div class="form-control">
+					<input type="text" class="form-button" value="Submit">
+				</div>	
+			</form>
+				<h3>Payment</h3>
+			<form>
+				<div class="form-control">
+					<label for="payment-name" class="form-label">Name</label>
+					<input type="text" class="form-input" id="payment-name" placeholder="Name">
+				</div>
+				<div class="form-control">
+					<label for="payment-number" class="form-label">Card Number</label>
+					<input type="text" class="form-input" id="address-number" placeholder="####-####-####-####">
+				</div>
+				<div class="form-control">
+					<div class="grid gap">
+						<div class="col-xs-12 col-md-6">
+							<label for="payment-expiration" class="form-label">Expiration Dater</label>
+							<input type="text" class="form-input" id="payment-expiration" placeholder="MM-YY">
+						</div>
+						<div class="col-xs-12 col-md-6">
+							<label for="payment-cvv" class="form-label">CVV</label>
+							<input type="text" class="form-input" id="payment-cvv" placeholder="CVV">
+						</div>
+					</div>
+				</div>
+				<div class="form-control">
+					<label for="payment-zip" class="form-label">Zip Code</label>
+					<input type="text" class="form-input" id="payment-zip" placeholder="Zip Code">
+				</div>
+				<div class="form-control">
+					<input type="text" class="form-button" value="Submit">
+				</div>	
+			</form>
+
+			<h3 id="buttons">Buttons</h3>
+			<div class="card soft">
+				<h3>Default Buttons</h3>
+				<button>Button</button>
+				<h3>Form Buttons</h3>
+				<div class="form-control">
+					<button class="form-button" type="button">Button</button>
+				</div>
+				<div class="form-control">
+					<input type="button" class="form-button" value="input">
+				</div>
+				<div class="form-control">
+					<a href="#" class="form-button">Anchor</a>
+				</div>
+			</div>
+			<h3 id="hotdog">Hotdog</h3>
+			<div class="card soft">
+				<div class="form-control">
+					<form>
+						<input type="search" class="hotdog" placeholder="Search">
+					</form>
+				</div>
+				<div class="form-control">
+					<form>
+						<input type="search" class="hotdog dark" placeholder="Search">
+					</form>
+				</div>
+				<div class="form-control">
+					<form class="card dark">
+						<input type="search" class="hotdog light" placeholder="Search">
+					</form>
+				</div>
+				<div class="form-control">
+					<form class="hotdog">
+						<span>&equiv;</span>
+						<input type="search" placeholder="Search">
+					</form>
+				</div>
+				<div class="form-control">
+					<form class="hotdog">
+						<input type="search" placeholder="Search">
+						<span>&equiv;</span>
+					</form>
+				</div>
+				<div class="form-control">
+					<form>
+						<input type="search" class="hotdog" placeholder="Search">
+					</form>
+				</div>
+			</div>
+
+			<h3 id="select">Select</h3>
+			<div class="card soft">
+				<div class="form-select">
+					<select>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+				</div>
+				<div class="display-flex">
+					<div class="flex-stretch"></div>
+					<div class="flex-none">
+						<select>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			
+			<h3 id="checkboxes">Checkboxes</h3>
+			<div class="card soft">
+				<h3>Basic Checkbox</h3>
+				<label>Label <input type="checkbox" id="input-1"></label>
+				<label for="input-1">Label</label>
+
+				<h3>Heart Checkbox</h3>
+				<div class="favorite">
+					<input type="checkbox" id="heart-example" class="hidden">
+					<label for="heart-example">&hearts;</label>
+				</div>
+
+				<h3>Toggle</h3>
+				<div class="toggle">
+					<input type="checkbox" id="toggle-1" class="hidden">
+					<label for="toggle-1"></label>
+				</div>
+				<div class="display-flex flex-align-center">
+					<div class="flex-stretch">
+						<label for="toggle-2" class="form-label">Toggle Button?</label>
+					</div>
+					<div class="flex-none">
+						<div class="toggle" style="font-size: 2em;">
+							<input type="checkbox" id="toggle-2" class="hidden">
+							<label for="toggle-2"></label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 
 
 </body>
