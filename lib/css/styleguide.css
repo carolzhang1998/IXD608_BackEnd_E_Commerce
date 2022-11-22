@@ -207,6 +207,7 @@ a:hover {
 	.card.soft {
 		box-shadow: 0 0 30px rgba(255, 197, 35, 0.2);
 		border-radius: 1.5em;
+		margin-left: 1em;
 	}
 	.card.hard {
 		border: 2px solid rgba(255, 214, 0, 1);
@@ -489,7 +490,9 @@ figcaption div {
 	border-radius: 0.2em;
 	cursor: pointer;
 	text-align: center;
-
+}
+.form-button.inline {
+	width: initial;
 }
 .form-button:hover {
 	text-decoration: none;

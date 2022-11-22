@@ -1,12 +1,16 @@
+<?
+include_once "lib/php/functions.php";
+include_once "parts/templates.php";
+
+// print_p($_SESSION, $_GET,$_POST);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 	<title>Store Product List</title>
 	<? include "parts/meta.php"; ?>
-
 </head>
-
 <body>
 
 	<? include "parts/navbar.php"; ?>
@@ -16,8 +20,6 @@
 			<h2>Product List</h2>
 			
 			<?
-				include_once "lib/php/functions.php";
-				include_once "parts/templates.php";
 
 				$result = makeQuery(
 					makeConn(),
