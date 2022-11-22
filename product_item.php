@@ -72,6 +72,25 @@ $image_elements = array_reduce($images, function($r,$o){
 								</select>
 							</div>
 						</div>
+						<div class="form-control">
+							<label for="product-sweet" class="form-label product-item-form-label">Sweet Level</label>
+							<div class="form-select">
+								<select name="product-sweet" id="product-sweet">
+									<option>Light</option>
+									<option>Medium</option>
+									<option>None</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-control">
+							<label for="product-ice" class="form-label product-item-form-label">Ice Level</label>
+							<div class="form-select">
+								<select name="product-ice" id="product-ice">
+									<option>Hot</option>
+									<option>Iced</option>
+								</select>
+							</div>
+						</div>
 					</div>
 					<div class="card-selection">
 						<input type="submit" value="Add to Cart" class="form-button">
